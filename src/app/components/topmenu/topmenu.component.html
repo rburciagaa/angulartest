@@ -1,0 +1,8 @@
+<div class="d-flex p-3 bg-primary text-white">
+        Grupo 
+        <select (change)="onSelectChange($event)" class="form-select w-25" id="grupo" style="margin: 5px;">
+            <option *ngFor="let grupo of grupos" [value]="grupo.id">{{ grupo.nombre }}</option>
+        </select>
+        Fecha
+        <input (change)="onFechaChange($event)" [value]="obtenerFecha()" type="date" class="form-control w-25" id="fecha" style="margin-left: 5px;">
+</div>
