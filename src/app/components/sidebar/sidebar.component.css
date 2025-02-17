@@ -12,5 +12,14 @@ button{
     padding: 10px 24px;
     transition-duration: 0.4s;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;    
+    font-weight: 500;   
+    width: 100%; 
+}
+
+.divider {
+    width: 100%; /* Asegura que la línea cubra todo el ancho */
+    height: 1px; /* Define el grosor de la línea */
+    background-color: #ccc; /* Color de la línea */
+    border: none; /* Elimina bordes predeterminados */
+    margin: 10px 0; /* Espaciado superior e inferior */
 }
