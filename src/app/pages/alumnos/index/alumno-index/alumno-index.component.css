@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    text-align: center;
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #000;
+}
+
+table th{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+}   
+
+table td{
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+table a{
+    text-decoration: none;
+    color: #000;
+    margin:5px;
+}
+
+a{
+    text-decoration: none;
+    color: #00f;
+    margin-left: 5px;
+}
+
+a:hover{
+    cursor: pointer;
+}

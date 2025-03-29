@@ -12,8 +12,8 @@ export class SidebarComponent {
 
   constructor(private router: Router) { }
 
-  show() {
-    this.router.navigate(['/alumnos']);
+  showAlumnos() {
+    this.router.navigate(['/globalalumnos']);
   }
 
 }

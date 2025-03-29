@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width:50%;
+}
+
+label{
+    display: block;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #00f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btnCancelar{
+    padding: 10px;
+    margin: 5px 0;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+}

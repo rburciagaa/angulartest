@@ -1,0 +1,23 @@
+
+<h2>Crear alumno</h2>
+<br>
+<div class="container">
+
+    <form [formGroup]="form" (ngSubmit)="crearAlumno()">
+        <label for="matricula">Matricula</label>
+        <input type="text" id="matricula" name="matricula" formControlName="matricula">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" formControlName="nombre">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" formControlName="apellidos">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" formControlName="email">
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" name="telefono" formControlName="telefono">
+        <input type="checkbox" id="activo" name="activo" formControlName="activo">
+        <label for="activo">Activo</label>
+        <br>
+        <button type="submit">Crear</button>
+    </form>
+    <button class="btnCancelar" (click)="cancelar()">Cancelar</button>
+</div>

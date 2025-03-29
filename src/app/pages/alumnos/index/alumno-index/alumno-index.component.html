@@ -1,0 +1,27 @@
+<h1>Listado de alumnos registrados</h1>
+<a [routerLink]="['/globalalumnos/create']">Crear alumno</a>
+
+<div class="container">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let alumno of globalAlumnos">
+                <td>{{alumno.matricula}}</td>
+                <td>{{alumno.nombre}}</td>
+                <td>{{alumno.apellidos}}</td>
+                <td>
+                    <a *ngIf="alumno.id" title="Editar" [routerLink]="['/globalalumnos/create', alumno.id]">✏️</a>
+                    <a title="Eliminar" (click)="eliminarAlumno(alumno.id)">🗑️</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

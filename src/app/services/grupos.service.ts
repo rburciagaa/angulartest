@@ -19,9 +19,9 @@ export class GruposService {
 
   constructor() {
     //TODO: Cargar los grupos desde la base de datos
-    this.grupos.push({ id: 1, nombre: 'Grupo 1', descripcion: 'Descripción del grupo 1' });
-    this.grupos.push({ id: 2, nombre: 'Grupo 2', descripcion: 'Descripción del grupo 2' });
-    this.grupos.push({ id: 3, nombre: 'Grupo 3', descripcion: 'Descripción del grupo 3' });
+    this.grupos.push({ id: 1, nombre: 'Grupo 1', descripcion: 'Descripción del grupo 1', año: 2021, periodo: 1, semestre: 6, carrera: 'ISC' });
+    this.grupos.push({ id: 2, nombre: 'Grupo 2', descripcion: 'Descripción del grupo 2', año: 2021, periodo: 1, semestre: 6, carrera: 'ISC' });
+    this.grupos.push({ id: 3, nombre: 'Grupo 3', descripcion: 'Descripción del grupo 3', año: 2021, periodo: 1, semestre: 6, carrera: 'ISC' });
 
     // 🔥 Si hay grupos, establece el primero como seleccionado
     if (this.grupos.length > 0) {
